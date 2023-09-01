@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>William's Personal Website</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+        body {
+            background-color: rgb(255 255 191);
+            font-family: "Times New Roman", Times, serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar {
+            background-color: orange;
+            overflow: hidden;
+        }
+
+        .navbar a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        .navbar a:hover {
+            background-color: #FFD700; /* Light yellow */
+            color: black;
+        }
+
+        .content {
+            padding: 20px;
+        }
+    </style>
+</head>
+<header>
+    <h1>Jiahua's Page</h1>
+    <p>University of California, San Diego</p>
+    <p>Department of Mathematics</p>
+</header>
+<body>
+    <script src="Personal_page.js"></script>
+    <div class="navbar">
+        <a href="#" onclick="showPage('personal')">Personal</a>
+        <a href="#" onclick="showPage('experience')">Experience & Projects</a>
+    </div>
+
+    <div class="content">
+        <div id="personal">
+            <div>
+            <h2>Who I Am</h2>
+            <p>My name is Jiahua Huang, and my preferred name is William, because too many people feel </p>
+                <p>like my Chinese name is hard to pronounce. I am a senior studying at UCSD, my major is </p>
+                <p>MATHEMATICS-COMPUTER SCIENCE. I like to learn new things outside of class. There are a </p>
+                <p>lot of things I learned from Udemy videos, such as Swift, javascript/html/css and other computer </p>
+                <p>languages. I think learning needs to keep up with the times, we need to keep trying and learning </p>
+                <p>new things so that life can get better and better. </p>
+            </div>
+
+            <div>
+            <h2>Fun Fact</h2>
+            <p>I adopted two cats one is an American Shorthair and the other is a Nebelung Cat (Russian Blue Longhair)</p>
+            </div>
+
+            <div>
+            <h2>How to reach me</h2>
+            <p>Email: huang118025043@gmail.com</p>
+            <p>Phone: 646-209-7544</p>
+        </div>
+
+        <section>
+        <div class="gallery">
+            <img src="IMG_2540.jpg" alt="Photo 1" class="gallery-image">
+            <img src="IMG_0572.JPG" alt="Photo 2" class="gallery-image">
+            <img src="IMG_5883.JPG" alt="Photo 3" class="gallery-image">
+        </div>
+    </section>
+
+        </div>
+
+        <div id="experience" style="display: none;">
+            <h2>Experience</h2>
+            <h3>Carbeeco SD.Inc</h3>
+            <p>Web Developer</p>
+            <ul>
+                <li>Utilized HTML, CSS, and JavaScript to design and implement the website's frontend, ensuring a user-friendly interface</li>
+                <li>Using the DealerCenter API Key to connect to DealerCenter and website to let dealer to put available car in the website</li>
+                <li>Implemented Node.js to handle server-side functionality and data retrieval, which responds to more than X requests every day</li>
+                <li>Integrated database functionality by SQL in car inventory and customer information, increasing business efficiency by 30%</li>
+            </ul>
+
+            <h2>Projects</h2>
+            <h3>IOS App Development Project</h3>
+            <ul>
+                <li>Use the Xcode, UIKit and SwiftUI, ARKit, CoreML and CoreData to build 15 apps</li>
+                <li>Design App using wireframe, mockup and prototype my app idea, also create apps that use Machine Learning using Apple’s new CoreML</li>
+                <li>Creating Augmented Reality apps using Apple’s new ARKit</li>
+            </ul>
+
+            <h3>Full-Stack: Yelp Camp</h3>
+            <ul>
+                <li>Developed a comprehensive event-centric website for camp information and reviews</li>
+                <li>Employed HTML/CSS/Javascript in conjunction with Bootstrap to establish the website's visual presentation, while integrating a map feature to showcase campgrounds using GeoJSON</li>
+                <li>Leveraged Node.js and RESTful routes for proficiently managing HTTP express requests and responses, and implemented CRUD functionalities to retrieve data through queries</li>
+                <li>Established a user database using MongoDB to ensure robust user authentication and authorization mechanisms</li>
+            </ul>
+
+            <h3>Ping Pong Game</h3>
+            <ul>
+                <li>Designed and developed an engaging Ping Pong game using Java and Swing</li>
+                <li>Created dynamic ball movement, collision detection, and unique gameplay features, adding depth and excitement</li>
+                <li>Showcasing proficiency in game programming and GUI design</li>
+            </ul>
+
+            <h3>Game 2048</h3>
+            <ul>
+                <li>Use Python to provide a trending game</li>
+                <li>Utilized Python Shell to accept and process input commands, ensuring a seamless gaming experience</li>
+                <li>Leveraged Python's object-oriented programming principles to design and implement the game's classes and functions, promoting code modularity and maintainability</li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        function showPage(pageName) {
+            const pages = ["personal", "experience"];
+            pages.forEach(page => {
+                if (page === pageName) {
+                    document.getElementById(page).style.display = "block";
+                } else {
+                    document.getElementById(page).style.display = "none";
+                }
+            });
+        }
+    </script>
+</body>
+</html>

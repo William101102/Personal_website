@@ -1,0 +1,25 @@
+/* Center the text in the header */
+h1, header p {
+    text-align: center;
+}
+
+/* Align the text on the left of the website */
+body #personal {
+    text-align: left;
+}
+
+/* Align the gallery to the left */
+.gallery {
+    display: flex;
+    justify-content: flex-start; /* Adjust this to 'flex-start' */
+    align-items: center; /* Keep it centered vertically */
+    height: 50vh;
+}
+
+/* Adjust the max-width for the gallery images */
+.gallery-image {
+    max-width: 100%; /* Change to 100% to use the full width */
+    max-height: 50%;
+    transition: opacity 0.5s ease-in-out;
+    opacity: 0;
+}
